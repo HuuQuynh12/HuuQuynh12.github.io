@@ -9,6 +9,11 @@ def index(request):
     })
 
 def wiki(request, title):
-    return render(request, "encyclopedia/wiki.html", {
-        "wiki": title,
+    wiki = util.get_entry(title)
+    if wiki:
+        return render(request, "encyclopedia/wiki.html", {
+        "wiki": wiki,
+        "title": title,
     })
+    else:
+        return render(request, "encyclopedia/error.html")
