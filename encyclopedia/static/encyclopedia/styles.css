@@ -36,3 +36,23 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+#create_title{
+    width: 50vw;
+    height: 430x;
+    margin-bottom: 10px;
+}
+.line{
+    border-bottom: 1px solid #ebebeb;
+}
+.create_content{
+    margin-top: 20px;
+    height: 50vh;
+    width: 70vw;
+    border: none;
+    border-bottom: 1px  solid #d9d9d9;
+
+}
+.submit{
+    margin-left: 65vw;
+}
